@@ -19,7 +19,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './public/about/about.component';
 import { HomeComponent } from './public/home/home.component';
 import { CarsComponent } from './cars/pages/cars/cars.component';
-
+import { ArrendadorComponent } from './arrendadores/pages/arrendadores/arrendador/arrendador.component';
 import {CarsService} from "./cars/services/cars.service";
 
 @NgModule({
@@ -27,7 +27,8 @@ import {CarsService} from "./cars/services/cars.service";
     AppComponent,
     AboutComponent,
     HomeComponent,
-    CarsComponent
+    CarsComponent,
+    ArrendadorComponent
   ],
   imports: [
     BrowserModule,
