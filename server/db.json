@@ -16,20 +16,20 @@
   "prices": [
     {
       "id": 1,
-      "title": "Tarifa mensual en dólares",
-      "description": "Periodo mensual, minimo 3 meses, $100.",
+      "title": "Monthly Fee in usd dollars",
+      "description": "Monthly period, Three months minimum.",
       "value": 100,
       "currency": "USD",
-      "feeType": "mensual",
+      "feeType": "monthly",
       "validity": "true"
     },
     {
       "id": 2,
-      "title": "Tarifa anual en soles",
-      "description": "Periodo anual, minimo 1 año, S/ 500.",
+      "title": "Annual Fee in pen nuevos soles",
+      "description": "Annual period, One year minimum.",
       "value": 500,
       "currency": "PEN",
-      "feeType": "anual",
+      "feeType": "annual",
       "validity": true
     }
   ]
