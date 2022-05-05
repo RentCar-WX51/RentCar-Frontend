@@ -21,13 +21,15 @@ import { HomeComponent } from './public/home/home.component';
 import { CarsComponent } from './cars/pages/cars/cars.component';
 
 import {CarsService} from "./cars/services/cars.service";
+import {PreciosComponent} from "./precios/pages/precios/precios.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     HomeComponent,
-    CarsComponent
+    CarsComponent,
+    PreciosComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,7 @@ import {CarsService} from "./cars/services/cars.service";
     MatIconModule,
     MatSortModule
   ],
-  providers: [CarsService],
+  providers: [CarsService, PreciosComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
