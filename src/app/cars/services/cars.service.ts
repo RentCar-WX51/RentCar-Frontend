@@ -8,7 +8,6 @@ import {Car} from "../model/car";
 })
 export class CarsService {
 
-  // Cars Endpoint
   basePath = 'http://localhost:3000/cars';
 
   httpOptions = {
@@ -16,6 +15,7 @@ export class CarsService {
       'Content-Type': 'application/json',
     })
   }
+
   constructor(private http: HttpClient) { }
 
   // API Error Handling
@@ -33,7 +33,6 @@ export class CarsService {
     return throwError(() => new Error('Something happened with request, please try again later'));
   }
 
-  // Create Car
   create(item: any): Observable<Car> {
     return this.http.post<Car>(this.basePath, JSON.stringify(item), this.httpOptions)
       .pipe(
@@ -41,35 +40,31 @@ export class CarsService {
         catchError(this.handleError));
   }
 
-  // Get Cars by id
   getById(id: any): Observable<Car> {
     return this.http.get<Car>(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
-
-  // Get All Cars
-  getAll(): Observable<Car> {
+  getAll(): Observable<Car>{
     return this.http.get<Car>(this.basePath, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  // Update Car
   update(id: any, item: any): Observable<Car> {
     return this.http.put<Car>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
-
-  // Delete Car
   delete(id: any) {
     return this.http.delete(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
+
+
 }
