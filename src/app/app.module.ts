@@ -21,13 +21,17 @@ import { HomeComponent } from './public/home/home.component';
 import { CarsComponent } from './cars/pages/cars/cars.component';
 
 import {CarsService} from "./cars/services/cars.service";
+import { TenantsComponent } from './tenants/pages/tenants/tenants.component';
+import {TenantsService} from "./tenants/services/tenants.service";
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     HomeComponent,
-    CarsComponent
+    CarsComponent,
+    TenantsComponent
   ],
   imports: [
     BrowserModule,

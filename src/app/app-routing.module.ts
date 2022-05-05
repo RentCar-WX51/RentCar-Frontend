@@ -4,12 +4,16 @@ import { RouterModule, Routes } from '@angular/router';
 import {CarsComponent} from "./cars/pages/cars/cars.component";
 import {AboutComponent} from "./public/about/about.component";
 import {HomeComponent} from "./public/home/home.component";
+import {TenantsComponent} from "./tenants/pages/tenants/tenants.component";
+
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'about', component: AboutComponent},
   { path: '', redirectTo: 'cars', pathMatch: 'full'},
   { path: 'cars', component: CarsComponent },
+  { path: '', redirectTo: 'tenants', pathMatch: 'full'},
+  { path: 'tenants', component: TenantsComponent}
 ];
 
 @NgModule({

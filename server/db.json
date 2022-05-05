@@ -12,5 +12,43 @@
       "id": 3,
       "name": "William Norton"
     }
+  ],
+  "tenants": [
+    {
+      "id": 2,
+      "name": "Edilberto Vargas",
+      "age": 25,
+      "address": "Jr.Tacna 526",
+      "city": "Callao",
+      "email": "jbec@gmail.com",
+      "cellphone": "991276214"
+    },
+    {
+      "id": 3,
+      "name": "Ronaldo Cordova",
+      "age": 30,
+      "address": "Av. Salaverry 2010",
+      "city": "San Isidro",
+      "email": "ronald@upc.com",
+      "cellphone": "956936212"
+    },
+    {
+      "id": 4,
+      "name": "Mike Suarez",
+      "age": 38,
+      "address": "Av.28 de Julio",
+      "city": "Los Olivos",
+      "email": "mikesuarez@upn.com",
+      "cellphone": "947536214"
+    },
+    {
+      "id": 5,
+      "name": "Cielo",
+      "age": 22,
+      "address": "Jr.Restauración 800",
+      "city": "Breña",
+      "email": "brisa@gmail.com",
+      "cellphone": "924324768"
+    }
   ]
 }
