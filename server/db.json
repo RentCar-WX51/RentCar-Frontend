@@ -49,6 +49,24 @@
       "city": "Breña",
       "email": "brisa@gmail.com",
       "cellphone": "924324768"
+    },
+    {
+      "name": "Sonia",
+      "age": 35,
+      "address": "Jr. Varela",
+      "city": "Jesus Maria",
+      "email": "sonia@bdf.com",
+      "cellphone": "971169696",
+      "id": 6
+    },
+    {
+      "name": "Michael",
+      "age": 26,
+      "address": "Jr.Tingo Maria 526",
+      "city": "Miraflores",
+      "email": "sneider@edu.pe",
+      "cellphone": "923632541",
+      "id": 7
     }
   ]
 }
