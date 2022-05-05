@@ -1,11 +1,11 @@
-export interface Precio {
+export interface Price {
   id: number;
-  titulo: string;
-  descripcion: string;
-  valor: number;
-  moneda: string;
-  tipoTarifa: string;
-  vigencia: boolean;
+  title: string;
+  description: string;
+  value: number;
+  currency: string;
+  feeType: string;
+  validity: boolean;
 }
 
 

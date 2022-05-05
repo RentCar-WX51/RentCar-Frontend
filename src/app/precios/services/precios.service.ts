@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError, Observable, retry, throwError} from "rxjs";
-import {Precio} from "../model/precio";
+import {Price} from "../model/price";
 
 @Injectable({
   providedIn: 'root'
 })
-export class PreciosService {
+export class PricesService {
 
-  // Precios Endpoint
-  basePath = 'http://localhost:3000/precios';
+  // Prices Endpoint
+  basePath = 'http://localhost:3000/prices';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -33,39 +33,39 @@ export class PreciosService {
     return throwError(() => new Error('Something happened with request, please try again later'));
   }
 
-  // Create Precio
-  create(item: any): Observable<Precio> {
-    return this.http.post<Precio>(this.basePath, JSON.stringify(item), this.httpOptions)
+  // Create Price
+  create(item: any): Observable<Price> {
+    return this.http.post<Price>(this.basePath, JSON.stringify(item), this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  // Get Precio by id
-  getById(id: any): Observable<Precio> {
-    return this.http.get<Precio>(`${this.basePath}/${id}`, this.httpOptions)
+  // Get Price by id
+  getById(id: any): Observable<Price> {
+    return this.http.get<Price>(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  // Get All Precios
-  getAll(): Observable<Precio> {
-    return this.http.get<Precio>(this.basePath, this.httpOptions)
+  // Get All Prices
+  getAll(): Observable<Price> {
+    return this.http.get<Price>(this.basePath, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  // Update Precio
-  update(id: any, item: any): Observable<Precio> {
-    return this.http.put<Precio>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
+  // Update Price
+  update(id: any, item: any): Observable<Price> {
+    return this.http.put<Price>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  // Delete Precio
+  // Delete Price
   delete(id: any) {
     return this.http.delete(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(

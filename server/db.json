@@ -13,24 +13,24 @@
       "name": "William Norton"
     }
   ],
-  "precios": [
+  "prices": [
     {
       "id": 1,
-      "titulo": "Tarifa mensual en dólares",
-      "descripcion": "Periodo mensual, minimo 3 meses, $100.",
-      "valor": 100,
-      "moneda": "USD",
-      "tipoTarifa": "mensual",
-      "vigencia": "true"
+      "title": "Tarifa mensual en dólares",
+      "description": "Periodo mensual, minimo 3 meses, $100.",
+      "value": 100,
+      "currency": "USD",
+      "feeType": "mensual",
+      "validity": "true"
     },
     {
       "id": 2,
-      "titulo": "Tarifa anual en soles",
-      "descripcion": "Periodo anual, minimo 1 año, S/ 500.",
-      "valor": 500,
-      "moneda": "PEN",
-      "tipoTarifa": "anual",
-      "vigencia": true
+      "title": "Tarifa anual en soles",
+      "description": "Periodo anual, minimo 1 año, S/ 500.",
+      "value": 500,
+      "currency": "PEN",
+      "feeType": "anual",
+      "validity": true
     }
   ]
 }
