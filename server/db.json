@@ -2,15 +2,29 @@
   "Cars": [
     {
       "id": 1,
-      "name": "John Doe"
+      "name": "Car 1"
     },
     {
       "id": 2,
-      "name": "Jason Bourne"
+      "name": "Car 2"
     },
     {
       "id": 3,
-      "name": "William Norton"
+      "name": "Car 3"
+    }
+  ],
+  "Tags": [
+    {
+      "name": "Tag 1",
+      "id": 1
+    },
+    {
+      "name": "Tag 2",
+      "id": 2
+    },
+    {
+      "name": "Tag 3",
+      "id": 3
     }
   ]
 }
