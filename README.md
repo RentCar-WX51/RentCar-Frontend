@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development database
 
-Run `json-server --watch .\server\db.json`. The database is now running.
+Run `json-server --watch .\server\db.json`. Navigate to `http://localhost:3000/`. The database is now running.
 
 ## Development server
 
