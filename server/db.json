@@ -12,5 +12,19 @@
       "id": 3,
       "name": "William Norton"
     }
+  ],
+  "arrendadores": [
+    {
+      "id": 1,
+      "name": "Jose Galvez",
+      "age": 50,
+      "email": "JoseGalvez@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Pedro Paulet",
+      "age": 40,
+      "email": "PedroPaulet@upc.edu.pe"
+    }
   ]
 }
