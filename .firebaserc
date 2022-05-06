@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "rentcar-frontend": {
+      "hosting": {
+        "learning-center": [
+          "rentcar-frontend"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "rentcar-frontend"
+  }
+}
