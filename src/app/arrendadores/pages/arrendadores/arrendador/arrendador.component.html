@@ -1,9 +1,9 @@
 <div class="table-wrapper">
-  <h1>Lista de Arrendadores</h1>
+  <h1>List of lessors</h1>
 
-  <h2>{{ isEditMode ? 'Editar Arrendador' : 'Agregar nuevo Arrendador'}}</h2>
+  <h2>{{ isEditMode ? 'Edit lessor' : 'Add new lessor'}}</h2>
 
-  <form (submit)="onSubmit()" #ArrendadorForm='ngForm'>
+  <form (submit)="onSubmit()" #arrendadorForm='ngForm'>
 
     <mat-form-field>
       <input matInput placeholder="Name" name="name" required
@@ -16,7 +16,7 @@
     </mat-form-field>
 
     <mat-form-field>
-      <input type="number" matInput placeholder="Email" name="email" required
+      <input matInput placeholder="Email" name="email" required
              [(ngModel)]="arrendadorData.email">
     </mat-form-field>
 
@@ -68,3 +68,4 @@
   </table>
   <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
 </div>
+

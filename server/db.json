@@ -25,6 +25,12 @@
       "name": "Pedro Paulet",
       "age": 40,
       "email": "PedroPaulet@upc.edu.pe"
+    },
+    {
+      "name": "Julio Iglesias",
+      "age": "35",
+      "email": "JulioI3@gmail.com",
+      "id": 3
     }
   ]
 }
