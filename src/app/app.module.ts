@@ -30,7 +30,7 @@ import {PricesComponent} from "./prices/pages/prices/prices.component";
     AboutComponent,
     HomeComponent,
     CarsComponent,
-    PricesComponent
+    PricesComponent,
     TagsComponent
   ],
   imports: [
