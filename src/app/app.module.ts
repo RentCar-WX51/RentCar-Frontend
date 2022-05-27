@@ -21,7 +21,7 @@ import { HomeComponent } from './public/home/home.component';
 import { CarsComponent } from './cars/pages/cars/cars.component';
 
 import {CarsService} from "./cars/services/cars.service";
-import {PreciosComponent} from "./precios/pages/precios/precios.component";
+import {PricesComponent} from "./prices/pages/prices/prices.component";
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import {PreciosComponent} from "./precios/pages/precios/precios.component";
     AboutComponent,
     HomeComponent,
     CarsComponent,
-    PreciosComponent
+    PricesComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +47,7 @@ import {PreciosComponent} from "./precios/pages/precios/precios.component";
     MatIconModule,
     MatSortModule
   ],
-  providers: [CarsService, PreciosComponent],
+  providers: [CarsService, PricesComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
