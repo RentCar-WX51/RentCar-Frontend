@@ -14,7 +14,6 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSortModule} from "@angular/material/sort";
 import {MatIconModule} from "@angular/material/icon";
-import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './public/about/about.component';
@@ -45,8 +44,7 @@ import {CarsService} from "./cars/services/cars.service";
     MatFormFieldModule,
     MatToolbarModule,
     MatIconModule,
-    MatSortModule,
-    MatTooltipModule
+    MatSortModule
   ],
   providers: [CarsService],
   bootstrap: [AppComponent]

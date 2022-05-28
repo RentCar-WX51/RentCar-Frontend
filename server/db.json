@@ -18,56 +18,19 @@
       "id": 1,
       "name": "Jose Galvez",
       "age": 50,
-      "email": "JoseGalvez@gmail.com",
-      "address": "Ate",
-      "carId": 1
+      "email": "JoseGalvez@gmail.com"
     },
     {
       "id": 2,
       "name": "Pedro Paulet",
       "age": 40,
-      "email": "PedroPaulet@upc.edu.pe",
-      "address": "Surco",
-      "carId": 2
+      "email": "PedroPaulet@upc.edu.pe"
     },
     {
       "name": "Julio Iglesias",
-      "age": 35,
+      "age": "35",
       "email": "JulioI3@gmail.com",
-      "id": 3,
-      "address": "Lince",
-      "carId": 3
-    },
-    {
-      "id": 4,
-      "name": "Miguel Ignacio de las Casas",
-      "age": 45,
-      "email": "LaConstructora@gmail.com",
-      "address": "San Juan de Miraflores",
-      "carId": 1
-    },
-    {
-      "id": 5,
-      "name": "Carles Puyol",
-      "age": 23,
-      "email": "ElBacCentral@gmail.com",
-      "address": "San Juan de Lurigancho",
-      "carId": 1
-    },
-    {
-      "id": 6,
-      "name": "Mascaly Medina",
-      "age": 60,
-      "email": "MascalyLafirme@gmail.com",
-      "address": "Victoria",
-      "carId": 1
-    },
-    {
-      "age": 25,
-      "email": "AntonioGuti@outlook.com",
-      "address": "Los Olivos",
-      "name": "Antonio Gutierrez",
-      "id": 7
+      "id": 3
     }
   ]
 }
