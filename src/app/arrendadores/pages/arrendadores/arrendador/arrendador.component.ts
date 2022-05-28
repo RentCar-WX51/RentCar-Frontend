@@ -16,7 +16,7 @@ export class ArrendadorComponent implements OnInit, AfterViewInit {
 
   arrendadorData: Arrendador;
   dataSource: MatTableDataSource<any>;
-  displayedColumns: string[] = ['id', 'name', 'age', 'email', 'actions'];
+  displayedColumns: string[] = ['id', 'name', 'age', 'email', 'address', 'actions'];
 
   @ViewChild('arrendadorForm', {static: false})
   arrendadorForm!: NgForm;
@@ -28,6 +28,7 @@ export class ArrendadorComponent implements OnInit, AfterViewInit {
   sort!: MatSort;
 
   isEditMode = false;
+  temporal = 0;
 
   constructor(private arrendadorService: ArrendadorService) {
     this.arrendadorData = {} as Arrendador;
