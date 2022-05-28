@@ -16,6 +16,7 @@
   "prices": [
     {
       "id": 1,
+<<<<<<< Updated upstream
       "title": "Monthly Fee in usd dollars",
       "description": "Monthly period, Three months minimum.",
       "value": 100,
@@ -31,6 +32,23 @@
       "currency": "PEN",
       "feeType": "annual",
       "validity": true
+=======
+      "name": "Jose Galvez",
+      "age": 50,
+      "email": "JoseGalvez@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Pedro Paulet",
+      "age": 40,
+      "email": "PedroPaulet@upc.edu.pe"
+    },
+    {
+      "name": "Julio Iglesias",
+      "age": "35",
+      "email": "JulioI3@gmail.com",
+      "id": 3
+>>>>>>> Stashed changes
     }
   ],
   "Tags": [
