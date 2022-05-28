@@ -14,15 +14,14 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSortModule} from "@angular/material/sort";
 import {MatIconModule} from "@angular/material/icon";
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './public/about/about.component';
 import { HomeComponent } from './public/home/home.component';
 import { CarsComponent } from './cars/pages/cars/cars.component';
-import { TagsComponent } from './tags/pages/tags/tags.component';
-
+import { ArrendadorComponent } from './arrendadores/pages/arrendadores/arrendador/arrendador.component';
 import {CarsService} from "./cars/services/cars.service";
-import {PricesComponent} from "./prices/pages/prices/prices.component";
 
 @NgModule({
   declarations: [
@@ -30,8 +29,7 @@ import {PricesComponent} from "./prices/pages/prices/prices.component";
     AboutComponent,
     HomeComponent,
     CarsComponent,
-    PricesComponent,
-    TagsComponent
+    ArrendadorComponent
   ],
   imports: [
     BrowserModule,
@@ -47,9 +45,10 @@ import {PricesComponent} from "./prices/pages/prices/prices.component";
     MatFormFieldModule,
     MatToolbarModule,
     MatIconModule,
-    MatSortModule
+    MatSortModule,
+    MatTooltipModule
   ],
-  providers: [CarsService, PricesComponent],
+  providers: [CarsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
