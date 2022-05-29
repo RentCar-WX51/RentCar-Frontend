@@ -14,15 +14,19 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSortModule} from "@angular/material/sort";
 import {MatIconModule} from "@angular/material/icon";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './public/about/about.component';
 import { HomeComponent } from './public/home/home.component';
+import { SignInComponent } from './public/sign-in/sign-in.component';
+import { SignUpComponent } from './public/sign-up/sign-up.component';
 import { CarsComponent } from './cars/pages/cars/cars.component';
 import { TagsComponent } from './tags/pages/tags/tags.component';
 
 import {CarsService} from "./cars/services/cars.service";
 import {PricesComponent} from "./prices/pages/prices/prices.component";
+
 
 @NgModule({
   declarations: [
@@ -31,7 +35,9 @@ import {PricesComponent} from "./prices/pages/prices/prices.component";
     HomeComponent,
     CarsComponent,
     PricesComponent,
-    TagsComponent
+    TagsComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,8 @@ import {PricesComponent} from "./prices/pages/prices/prices.component";
     MatFormFieldModule,
     MatToolbarModule,
     MatIconModule,
-    MatSortModule
+    MatSortModule,
+    MatCheckboxModule
   ],
   providers: [CarsService, PricesComponent],
   bootstrap: [AppComponent]

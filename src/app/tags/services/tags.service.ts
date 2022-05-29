@@ -9,7 +9,7 @@ import {Tag} from "../model/tag";
 export class TagsService {
 
   // Tags Endpoint
-  basePath = 'http://localhost:3000/tags';
+  basePath = 'https://rentcar-json-server.herokuapp.com/tags';
 
   httpOptions = {
     headers: new HttpHeaders({
