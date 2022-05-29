@@ -21,6 +21,7 @@ import { HomeComponent } from './public/home/home.component';
 import { CarsComponent } from './cars/pages/cars/cars.component';
 import { TagsComponent } from './tags/pages/tags/tags.component';
 
+import { ArrendadorComponent } from './arrendadores/pages/arrendadores/arrendador/arrendador.component';
 import {CarsService} from "./cars/services/cars.service";
 import {PricesComponent} from "./prices/pages/prices/prices.component";
 
@@ -31,7 +32,8 @@ import {PricesComponent} from "./prices/pages/prices/prices.component";
     HomeComponent,
     CarsComponent,
     PricesComponent,
-    TagsComponent
+    TagsComponent,
+    ArrendadorComponent
   ],
   imports: [
     BrowserModule,

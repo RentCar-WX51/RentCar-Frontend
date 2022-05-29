@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError, Observable, retry, throwError} from "rxjs";
-import {Car} from "../model/car";
+import {Arrendador} from "../model/arrendador";
 
 @Injectable({
   providedIn: 'root'
 })
-export class CarsService {
+export class ArrendadorService {
 
-  basePath = 'http://localhost:3000/cars';
+  // Precios Endpoint
+  basePath = 'http://localhost:3000/arrendadores';
 
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
     })
   }
-
   constructor(private http: HttpClient) { }
 
   // API Error Handling
@@ -33,38 +33,43 @@ export class CarsService {
     return throwError(() => new Error('Something happened with request, please try again later'));
   }
 
-  create(item: any): Observable<Car> {
-    return this.http.post<Car>(this.basePath, JSON.stringify(item), this.httpOptions)
+  // Create Arrendador
+  create(item: any): Observable<Arrendador> {
+    return this.http.post<Arrendador>(this.basePath, JSON.stringify(item), this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  getById(id: any): Observable<Car> {
-    return this.http.get<Car>(`${this.basePath}/${id}`, this.httpOptions)
-      .pipe(
-        retry(2),
-        catchError(this.handleError));
-  }
-  getAll(): Observable<Car>{
-    return this.http.get<Car>(this.basePath, this.httpOptions)
+  // Get Arrendador by id
+  getById(id: any): Observable<Arrendador> {
+    return this.http.get<Arrendador>(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  update(id: any, item: any): Observable<Car> {
-    return this.http.put<Car>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
+  // Get All Arrendadores
+  getAll(): Observable<Arrendador> {
+    return this.http.get<Arrendador>(this.basePath, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
+
+  // Update Arrendador
+  update(id: any, item: any): Observable<Arrendador> {
+    return this.http.put<Arrendador>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
+
+  // Delete Arrendador
   delete(id: any) {
     return this.http.delete(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
-
-
 }

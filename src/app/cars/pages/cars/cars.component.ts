@@ -1,21 +1,22 @@
-import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
-import { MatTableDataSource } from "@angular/material/table";
-import {NgForm} from "@angular/forms";
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {Car} from "../../model/car";
+import {MatTableDataSource} from "@angular/material/table";
+import {NgForm} from "@angular/forms";
 import {MatPaginator} from "@angular/material/paginator";
-import {MatSort} from "@angular/material/sort";
 import {CarsService} from "../../services/cars.service";
 import * as _ from "lodash";
+import {MatSort} from "@angular/material/sort";
+
 @Component({
   selector: 'app-cars',
   templateUrl: './cars.component.html',
   styleUrls: ['./cars.component.css']
 })
-export class CarsComponent implements OnInit, AfterViewInit {
+export class CarsComponent implements OnInit {
 
   carData: Car;
-  dataSource: MatTableDataSource<any>;
-  displayedColumns: string[] = ['id', 'name'];
+  dataSource: MatTableDataSource<any>
+  displayedColumns: String[] = ['id', 'year','model','plate', 'actions'];
 
   @ViewChild('carForm', {static: false})
   carForm!: NgForm;
@@ -23,23 +24,23 @@ export class CarsComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator, {static: true})
   paginator!: MatPaginator;
 
+
   @ViewChild(MatSort)
   sort!: MatSort;
 
   isEditMode = false;
 
-  constructor(private carsService: CarsService) {
+
+  constructor(private carsService: CarsService ) {
     this.carData = {} as Car;
     this.dataSource = new MatTableDataSource<any>();
   }
 
+
+
   ngOnInit(): void {
     this.dataSource.paginator = this.paginator;
     this.getAllCars();
-  }
-
-  ngAfterViewInit() {
-    this.dataSource.sort = this.sort;
   }
 
   getAllCars() {
@@ -65,6 +66,8 @@ export class CarsComponent implements OnInit, AfterViewInit {
       });
     });
     console.log(this.dataSource.data);
+
+
   }
 
   addCar() {
@@ -101,5 +104,11 @@ export class CarsComponent implements OnInit, AfterViewInit {
       console.log('Invalid data');
     }
   }
+
+
+
+
+
+
 
 }

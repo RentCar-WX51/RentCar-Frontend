@@ -11,6 +11,7 @@
       "year": 2005,
       "model": "Audi",
       "plate": "AWS987"
+<<<<<<< HEAD
     }
   ],
   "arrendadores": [
@@ -21,6 +22,36 @@
       "email": "JoseGalvez@gmail.com"
     },
     {
+=======
+    },
+    {
+      "id": 3,
+      "year": 2010,
+      "model": "Toyota",
+      "plate": "AFD972"
+    },
+    {
+      "id": 1,
+      "year": 2015,
+      "model": "Ford",
+      "plate": "VFR482"
+    },
+    {
+      "id": 1,
+      "year": 2019,
+      "model": "Tesla",
+      "plate": "GFG242"
+    }
+  ],
+  "arrendadores": [
+    {
+      "id": 1,
+      "name": "Jose Galvez",
+      "age": 50,
+      "email": "JoseGalvez@gmail.com"
+    },
+    {
+>>>>>>> feat/crud-cars
       "id": 2,
       "name": "Pedro Paulet",
       "age": 40,
