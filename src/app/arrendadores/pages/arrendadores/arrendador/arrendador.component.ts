@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatTableDataSource} from "@angular/material/table";
 import {NgForm} from "@angular/forms";
 import {MatPaginator} from "@angular/material/paginator";
@@ -12,7 +12,7 @@ import {ArrendadorService} from "../../../service/arrendador.service";
   templateUrl: './arrendador.component.html',
   styleUrls: ['./arrendador.component.css']
 })
-export class ArrendadorComponent implements OnInit, AfterViewInit {
+export class ArrendadorComponent implements OnInit {
 
   arrendadorData: Arrendador;
   dataSource: MatTableDataSource<any>;
@@ -36,14 +36,14 @@ export class ArrendadorComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.dataSource.paginator = this.paginator;
-    this.getAllArrendadores();
+    this.getAllPrecios();
   }
 
   ngAfterViewInit() {
     this.dataSource.sort = this.sort;
   }
 
-  getAllArrendadores() {
+  getAllPrecios() {
     this.arrendadorService.getAll().subscribe((response: any) => {
       this.dataSource.data = response;
     });
@@ -68,7 +68,7 @@ export class ArrendadorComponent implements OnInit, AfterViewInit {
     console.log(this.dataSource.data);
   }
 
-  addArrendador() {
+  addPrecio() {
     this.arrendadorData.id = 0;
     this.arrendadorService.create(this.arrendadorData).subscribe((response: any) => {
       this.dataSource.data.push( {...response});
@@ -76,7 +76,7 @@ export class ArrendadorComponent implements OnInit, AfterViewInit {
     });
   }
 
-  updateArrendador() {
+  updatePrecio() {
     this.arrendadorService.update(this.arrendadorData.id, this.arrendadorData).subscribe((response: any) => {
       this.dataSource.data = this.dataSource.data.map((o: Arrendador) => {
         if (o.id === response.id) {
@@ -92,10 +92,10 @@ export class ArrendadorComponent implements OnInit, AfterViewInit {
       console.log('valid');
       if (this.isEditMode) {
         console.log('about to update');
-        this.updateArrendador();
+        this.updatePrecio();
       } else {
         console.log('about to add');
-        this.addArrendador();
+        this.addPrecio();
       }
       this.cancelEdit();
     } else {

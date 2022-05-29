@@ -14,13 +14,20 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSortModule} from "@angular/material/sort";
 import {MatIconModule} from "@angular/material/icon";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './public/about/about.component';
 import { HomeComponent } from './public/home/home.component';
+import { SignInComponent } from './public/sign-in/sign-in.component';
+import { SignUpComponent } from './public/sign-up/sign-up.component';
 import { CarsComponent } from './cars/pages/cars/cars.component';
+import { TagsComponent } from './tags/pages/tags/tags.component';
+
 import { ArrendadorComponent } from './arrendadores/pages/arrendadores/arrendador/arrendador.component';
 import {CarsService} from "./cars/services/cars.service";
+import {PricesComponent} from "./prices/pages/prices/prices.component";
+
 
 @NgModule({
   declarations: [
@@ -28,6 +35,10 @@ import {CarsService} from "./cars/services/cars.service";
     AboutComponent,
     HomeComponent,
     CarsComponent,
+    PricesComponent,
+    TagsComponent,
+    SignInComponent,
+    SignUpComponent,
     ArrendadorComponent
   ],
   imports: [
@@ -44,9 +55,11 @@ import {CarsService} from "./cars/services/cars.service";
     MatFormFieldModule,
     MatToolbarModule,
     MatIconModule,
-    MatSortModule
+    MatSortModule,
+    MatCheckboxModule
   ],
-  providers: [CarsService],
+  providers: [CarsService, PricesComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

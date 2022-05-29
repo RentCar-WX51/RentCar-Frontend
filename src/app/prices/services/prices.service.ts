@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError, Observable, retry, throwError} from "rxjs";
-import {Arrendador} from "../model/arrendador";
+import {Price} from "../model/price";
 
 @Injectable({
   providedIn: 'root'
 })
-export class ArrendadorService {
+export class PricesService {
 
-  // Precios Endpoint
-  basePath = 'https://rentcar-json-server.herokuapp.com/arrendadores';
+  // Prices Endpoint
+  basePath = 'https://rentcar-json-server.herokuapp.com/prices';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -33,39 +33,39 @@ export class ArrendadorService {
     return throwError(() => new Error('Something happened with request, please try again later'));
   }
 
-  // Create Arrendador
-  create(item: any): Observable<Arrendador> {
-    return this.http.post<Arrendador>(this.basePath, JSON.stringify(item), this.httpOptions)
+  // Create Price
+  create(item: any): Observable<Price> {
+    return this.http.post<Price>(this.basePath, JSON.stringify(item), this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  // Get Arrendador by id
-  getById(id: any): Observable<Arrendador> {
-    return this.http.get<Arrendador>(`${this.basePath}/${id}`, this.httpOptions)
+  // Get Price by id
+  getById(id: any): Observable<Price> {
+    return this.http.get<Price>(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  // Get All Arrendadores
-  getAll(): Observable<Arrendador> {
-    return this.http.get<Arrendador>(this.basePath, this.httpOptions)
+  // Get All Prices
+  getAll(): Observable<Price> {
+    return this.http.get<Price>(this.basePath, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  // Update Arrendador
-  update(id: any, item: any): Observable<Arrendador> {
-    return this.http.put<Arrendador>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
+  // Update Price
+  update(id: any, item: any): Observable<Price> {
+    return this.http.put<Price>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
 
-  // Delete Arrendador
+  // Delete Price
   delete(id: any) {
     return this.http.delete(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(
