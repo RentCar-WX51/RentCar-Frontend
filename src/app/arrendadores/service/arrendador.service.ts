@@ -9,7 +9,7 @@ import {Arrendador} from "../model/arrendador";
 export class ArrendadorService {
 
   // Precios Endpoint
-  basePath = 'http://localhost:3000/arrendadores';
+  basePath = 'https://rentcar-json-server.herokuapp.com/arrendadores';
 
   httpOptions = {
     headers: new HttpHeaders({

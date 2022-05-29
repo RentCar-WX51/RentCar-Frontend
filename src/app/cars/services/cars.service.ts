@@ -8,7 +8,7 @@ import {Car} from "../model/car";
 })
 export class CarsService {
 
-  basePath = 'http://localhost:3000/cars';
+  basePath = 'https://rentcar-json-server.herokuapp.com/cars';
 
   httpOptions = {
     headers: new HttpHeaders({
