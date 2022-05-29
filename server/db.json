@@ -1,39 +1,82 @@
 {
-  "Cars": [
+  "cars": [
     {
       "id": 1,
-      "name": "Car 1"
+      "year": 2010,
+      "model": "Toyota",
+      "plate": "AWS987"
     },
     {
       "id": 2,
-      "name": "Car 2"
+      "year": 2005,
+      "model": "Audi",
+      "plate": "AWS987"
+<<<<<<< HEAD
+    }
+  ],
+  "arrendadores": [
+    {
+      "id": 1,
+      "name": "Jose Galvez",
+      "age": 50,
+      "email": "JoseGalvez@gmail.com"
+    },
+    {
+=======
     },
     {
       "id": 3,
-      "name": "Car 3"
-    }
-  ],
-  "prices": [
+      "year": 2010,
+      "model": "Toyota",
+      "plate": "AFD972"
+    },
     {
       "id": 1,
-      "title": "Monthly Fee in usd dollars",
-      "description": "Monthly period, Three months minimum.",
-      "value": 100,
-      "currency": "USD",
-      "feeType": "monthly",
-      "validity": true
+      "year": 2015,
+      "model": "Ford",
+      "plate": "VFR482"
+    },
+    {
+      "id": 1,
+      "year": 2019,
+      "model": "Tesla",
+      "plate": "GFG242"
+    }
+  ],
+  "arrendadores": [
+    {
+      "id": 1,
+      "name": "Jose Galvez",
+      "age": 50,
+      "email": "JoseGalvez@gmail.com"
+    },
+    {
+>>>>>>> feat/crud-cars
+      "id": 2,
+      "name": "Pedro Paulet",
+      "age": 40,
+      "email": "PedroPaulet@upc.edu.pe"
+    }
+  ],
+  "tenants": [
+    {
+      "id": 1,
+      "name": "Edilberto Vargas",
+      "age": 25,
+      "address": "Jr.Tacna 526",
+      "city": "Callao",
+      "email": "jbec@gmail.com",
+      "cellphone": "991276214"
     },
     {
       "id": 2,
-      "title": "Annual Fee in pen nuevos soles",
-      "description": "Annual period, One year minimum.",
-      "value": 500,
-      "currency": "PEN",
-      "feeType": "annual",
-      "validity": true
+      "name": "Ronaldo Cordova",
+      "age": 30,
+      "address": "Av. Salaverry 2010",
+      "city": "San Isidro",
+      "email": "ronald@upc.com",
+      "cellphone": "956936212"
     }
   ],
-  "Tags": [
-    {}
-  ]
+  "Tags": []
 }
