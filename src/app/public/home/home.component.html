@@ -1,0 +1,89 @@
+<section class="contenedor">
+  <img src="https://gossipvehiculo.com/wp-content/uploads/2020/12/2021-jaguar-f-type-heritage-60-3.jpg" width=100%>
+  <div class="texto-encima">
+
+    <h1 ><b> TE AYUDAMOS A ENCONTRAR <br>EL AUTO PERFECTO PARA LA OCASION</b></h1>
+  </div>
+  <div class="centrado">Contactanos para poder realizar con los documentos necesarios</div>
+  <button class="button_centrado button_first">Mas informacion -></button>
+
+  <a  mat-stroked-button [routerLink]="'/login'" class="button_centrado button_secund">Inscribete</a>
+
+</section>
+<div class="font_home" >
+
+  <h1> Nuestros Servicios</h1>
+
+  <div class="contenedor2">
+    <section class="OurService">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">car_rental</mat-icon>
+      <h2><b>Arrendador</b></h2>
+      <h3>Le facilitamos el prestamo del vehivulo segun las necesidades que necesite, Todos nuestros vehiculos se encuentran en regla</h3>
+      <a  mat-stroked-button [routerLink]="'/about'" >Mas Informacion</a>
+    </section>
+    <section class="OurService">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
+      <h2><b>Arrendatario</b></h2>
+      <h3>Le ayudamos a rentar su vehiculo cuando no este utilizando, generando ingresos adicionales</h3>
+      <a  mat-stroked-button [routerLink]="'/about'" >Mas Informacion</a>
+    </section>
+
+
+  </div>
+  <button class="seePluss"> Si quieres ver todo lo que te ofrecemos </button>
+
+</div>
+<div class="contact_form">
+
+  <div class="formulario">
+    <h1>Formulario de contacto</h1>
+    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+    <form  method="post">
+
+
+      <p>
+        <label for="nombre" class="colocar_nombre">Nombre
+          <span class="obligatorio">*</span>
+        </label>
+        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+      </p>
+
+      <p>
+        <label for="email" class="colocar_email">Email
+          <span class="obligatorio">*</span>
+        </label>
+        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+      </p>
+
+      <p>
+        <label  class="colocar_telefono">Teléfono
+        </label>
+        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+      </p>
+
+
+      <p>
+        <label  class="colocar_asunto">Asunto
+          <span class="obligatorio">*</span>
+        </label>
+        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+      </p>
+
+      <p>
+        <label for="mensaje" class="colocar_mensaje">Mensaje
+          <span class="obligatorio">*</span>
+        </label>
+        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+      </p>
+
+      <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+      <p class="aviso">
+        <span class="obligatorio"> * </span>los campos son obligatorios.
+      </p>
+
+    </form>
+  </div>
+</div>
