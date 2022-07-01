@@ -11,18 +11,6 @@
       "year": 2005,
       "model": "Audi",
       "plate": "AWS987"
-<<<<<<< HEAD
-    }
-  ],
-  "arrendadores": [
-    {
-      "id": 1,
-      "name": "Jose Galvez",
-      "age": 50,
-      "email": "JoseGalvez@gmail.com"
-    },
-    {
-=======
     },
     {
       "id": 3,
@@ -51,7 +39,6 @@
       "email": "JoseGalvez@gmail.com"
     },
     {
->>>>>>> feat/crud-cars
       "id": 2,
       "name": "Pedro Paulet",
       "age": 40,
